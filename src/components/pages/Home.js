@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Home = () => {
   return (
     <div>
-      {/* <img src={img} alt="bg-img" /> */}
       <H1></H1>
     </div>
   )
