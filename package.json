@@ -4,7 +4,7 @@
   "description": "my react boiler plate",
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --open --hot --history-api-fallback --inline",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -23,6 +23,7 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
@@ -44,5 +45,8 @@
       "browser": true,
       "node": true
     }
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
