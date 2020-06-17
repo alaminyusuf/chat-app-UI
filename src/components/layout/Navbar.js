@@ -45,6 +45,9 @@ const Ul = styled.ul`
 `
 
 const Li = styled.li`
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 4rem;
   list-style: none;
   margin: 0 15px 0 0;

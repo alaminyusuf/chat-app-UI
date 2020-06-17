@@ -5,7 +5,6 @@ import { GlobalStyle } from './style/Global'
 import { theme } from './style/theme'
 
 import Home from './components/pages/Home'
-import SideBar from './components/pages/SideBar'
 import Navbar from './components/layout/Navbar'
 import Login from './components/pages/Login'
 import SignUp from './components/pages/SignUp'
@@ -22,7 +21,6 @@ const App = () => {
             <div className="container">
               <Route path="/login" component={Login} />
               <Route path="/signup" component={SignUp} />
-              <Route path="/chat" component={SideBar} />
             </div>
           </Switch>
         </div>
