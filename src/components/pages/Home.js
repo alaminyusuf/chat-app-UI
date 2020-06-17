@@ -8,14 +8,7 @@ const Home = () => {
       <SideDiv>
         <SideBar />
       </SideDiv>
-      <Div style={{ color: '#5f9ea0', fontSize: '25px' }}>
-        <div className="wrapper">
-          <Img
-            src="https://images.pexels.com/photos/4132424/pexels-photo-4132424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="bg-img"
-          />
-        </div>
-      </Div>
+      <Div>Join Others, Stay Connected!</Div>
     </Body>
   )
 }
@@ -27,11 +20,9 @@ const Body = styled.div`
 
 const Div = styled.div`
   flex-grow: 4;
-`
-
-const Img = styled.img`
-  height: 93.7vh;
-  width: 100%;
+  color: ${({ theme }) => theme.primaryButton};
+  font-size: ${({ theme }) => theme.headerFont};
+  text-align: center;
 `
 
 const SideDiv = styled.nav`

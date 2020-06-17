@@ -4,11 +4,13 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from './style/Global'
 import { theme } from './style/theme'
 
-import ChatPage from './components/pages/ChatPage'
+import ChatPage from './components/pages/chat/ChatPage'
 import Home from './components/pages/Home'
 import Navbar from './components/layout/Navbar'
 import Login from './components/pages/Login'
 import SignUp from './components/pages/SignUp'
+import Profile from './components/pages/Profile'
+import Settings from './components/pages/Settings'
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
               <Route path="/login" component={Login} />
               <Route path="/signup" component={SignUp} />
               <Route path="/chat" component={ChatPage} />
+              <Route exact path="/profile" component={Profile} />
+              <Route path="/profile/settings" component={Settings} />
             </div>
           </Switch>
         </div>

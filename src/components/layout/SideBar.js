@@ -1,12 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const SideBar = () => {
   return (
     <Div>
-      <div>Profile</div>
-      <div>Chat</div>
-      <div>Settings</div>
+      <Link to="/profile">
+        <div>Profile</div>
+      </Link>
+      <Link to="/chat">
+        <div>Chat</div>
+      </Link>
+      <Link to="/profile/settings">
+        <div>Settings</div>
+      </Link>
       <div>Log Out</div>
     </Div>
   )
@@ -19,7 +26,7 @@ const Div = styled.div`
   div {
     margin: auto;
     border-radius: 10px;
-    width: 80%;
+    width: 85%;
     padding: 5px;
     background-color: ${({ theme }) => theme.secondaryButton};
     margin-top: 3rem;

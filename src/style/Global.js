@@ -17,22 +17,6 @@ html, *{
       overflow: hidden;
       height: 100%;
     }
-    .wrapper {
-      position: relative;
-      display: inline-block;
-    };
-
-    .wrapper:after{
-      content: "";
-      background: -webkit-rgba(0,0,0,0.6);
-      background: rgba(0,0,0,0.6);
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      bottom: 0;
-    };
   }
 }
 `
