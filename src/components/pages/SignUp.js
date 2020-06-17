@@ -63,7 +63,6 @@ const Label = styled.label`
 `
 
 const Input = styled.input`
-  cursor: pointer;
   margin: auto;
   width: 70%;
   height: 25px;

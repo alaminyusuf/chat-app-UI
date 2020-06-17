@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <Nav>
-      <H1>Code</H1>
+      <H1>Chat Hub</H1>
       {isHome() ? null : (
         <Link to="/">
           <Li>Home</Li>

@@ -36,7 +36,7 @@ const Model = styled.div`
   width: 65%;
   -webkit-box-shadow: ${({ theme }) => theme.shadow};
   box-shadow: ${({ theme }) => theme.shadow};
-  height: 55vh;
+  height: 65vh;
   background-color: #fff;
   margin-top: 5%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -63,7 +63,6 @@ const Label = styled.label`
 `
 
 const Input = styled.input`
-  cursor: pointer;
   margin: auto;
   width: 70%;
   height: 25px;

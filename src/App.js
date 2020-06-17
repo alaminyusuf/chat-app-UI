@@ -7,8 +7,8 @@ import { theme } from './style/theme'
 import Home from './components/pages/Home'
 import SideBar from './components/pages/SideBar'
 import Navbar from './components/layout/Navbar'
-import Login from './components/layout/Login'
-import SignUp from './components/layout/SignUp'
+import Login from './components/pages/Login'
+import SignUp from './components/pages/SignUp'
 
 const App = () => {
   return (
@@ -17,14 +17,14 @@ const App = () => {
         <div>
           <GlobalStyle />
           <Navbar />
-          <div className="container">
-            <Switch>
-              <Route exact path="/" component={Home} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <div className="container">
               <Route path="/login" component={Login} />
               <Route path="/signup" component={SignUp} />
               <Route path="/chat" component={SideBar} />
-            </Switch>
-          </div>
+            </div>
+          </Switch>
         </div>
       </Router>
     </ThemeProvider>
