@@ -22,7 +22,7 @@ const Div = styled.div`
     width: 80%;
     padding: 5px;
     background-color: ${({ theme }) => theme.secondaryButton};
-    margin-top: 4rem;
+    margin-top: 3rem;
     &:hover {
       background-color: ${({ theme }) => theme.primaryButton};
     }

@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from './style/Global'
 import { theme } from './style/theme'
 
+import ChatPage from './components/pages/ChatPage'
 import Home from './components/pages/Home'
 import Navbar from './components/layout/Navbar'
 import Login from './components/pages/Login'
@@ -21,6 +22,7 @@ const App = () => {
             <div className="container">
               <Route path="/login" component={Login} />
               <Route path="/signup" component={SignUp} />
+              <Route path="/chat" component={ChatPage} />
             </div>
           </Switch>
         </div>
