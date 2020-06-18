@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SideBar from '../layout/SideBar'
+import People from '@material-ui/icons/People'
 
 const Home = () => {
   return (
@@ -8,7 +9,9 @@ const Home = () => {
       <SideDiv>
         <SideBar />
       </SideDiv>
-      <Div>Join Others, Stay Connected!</Div>
+      <Div>
+        Join Others, Stay Connected! <br /> <People style={{ fontSize: 100 }} />
+      </Div>
     </Body>
   )
 }

@@ -1,20 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { Settings, Face, Chat, TimeToLeave } from '@material-ui/icons'
 
 const SideBar = () => {
   return (
     <Div>
       <Link to="/profile">
-        <div>Profile</div>
+        <div>
+          Profile <Face />
+        </div>
       </Link>
       <Link to="/chat">
-        <div>Chat</div>
+        <div>
+          Chat <Chat />
+        </div>
       </Link>
       <Link to="/profile/settings">
-        <div>Settings</div>
+        <div>
+          Settings <Settings />
+        </div>
       </Link>
-      <div>Log Out</div>
+      <div>
+        Log Out <TimeToLeave />
+      </div>
     </Div>
   )
 }
