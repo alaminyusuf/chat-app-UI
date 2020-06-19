@@ -12,7 +12,7 @@ html, *{
       text-decoration: none;
     }
     .container {
-      width: 90%;
+      width: 80%;
       margin: auto;
       overflow: hidden;
       height: 100%;

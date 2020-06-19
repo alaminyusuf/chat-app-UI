@@ -21,10 +21,10 @@ const App = () => {
           <Navbar />
           <Route exact path="/" component={Home} />
           <div className="container">
+            <Route path="/chat" component={ChatPage} />
             <Switch>
               <Route path="/login" component={Login} />
               <Route path="/signup" component={SignUp} />
-              <Route path="/chat" component={ChatPage} />
               <Route exact path="/profile" component={Profile} />
               <Route path="/profile/settings" component={Settings} />
             </Switch>

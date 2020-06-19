@@ -1,28 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { Settings, Chat, ExitToApp, Portrait } from '@material-ui/icons'
+import { Settings, Chat, ExitToApp, Person } from '@material-ui/icons'
 
 const SideBar = () => {
   return (
     <Div>
       <Link to="/profile">
         <div>
-          <Portrait fontSize="small" />
+          <Person />
         </div>
       </Link>
       <Link to="/chat">
         <div>
-          <Chat fontSize="small" />
+          <Chat />
         </div>
       </Link>
       <Link to="/profile/settings">
         <div>
-          <Settings fontSize="small" />
+          <Settings />
         </div>
       </Link>
       <div>
-        <ExitToApp fontSize="small" />
+        <ExitToApp />
       </div>
     </Div>
   )
@@ -37,13 +37,13 @@ const Div = styled.div`
     justify-content: center;
     align-items: center;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 50%;
     width: 50%;
-    padding: 5px;
-    background-color: ${({ theme }) => theme.secondaryButton};
+    /* padding: 5px; */
+    color: #f4f4f4;
     margin-top: 3rem;
     &:hover {
-      background-color: ${({ theme }) => theme.primaryButton};
+      /* background-color: ${({ theme }) => theme.primaryButton}; */
     }
   }
 `
