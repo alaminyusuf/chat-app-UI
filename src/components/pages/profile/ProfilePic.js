@@ -17,7 +17,7 @@ const H1 = styled.h1`
 `
 
 const Input = styled.input`
-  width: 85%;
+  /* width: 85%; */
 `
 
 export default ProfilePic

@@ -11,7 +11,7 @@ const Profile = () => {
       </Left>
       <Div>
         <H3>
-          Edit Profile <Person />
+          Edit Profile <Person fontSize="large" />
         </H3>
         <div>
           Name <Edit fontSize="small" />
@@ -41,14 +41,11 @@ const Body = styled.div`
 const Div = styled.div`
   flex-grow: 4;
   div {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     border: 1px #ccc solid;
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    &:first-child {
-      margin-top: 0;
-    }
   }
 `
 const Left = styled.div`
@@ -66,9 +63,9 @@ const H3 = styled.h3`
 `
 
 const Button = styled.button`
-  width: 35%;
+  width: 40%;
   text-align: center;
-  height: 1.5rem;
+  height: 1.8rem;
   color: ${({ theme }) => theme.primaryDark};
   border: none;
   background-color: ${({ theme }) => theme.primaryButton};
