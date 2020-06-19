@@ -22,7 +22,7 @@ const Body = styled.div`
 `
 
 const Div = styled.div`
-  flex-grow: 4;
+  flex-grow: 5;
   color: ${({ theme }) => theme.primaryButton};
   font-size: ${({ theme }) => theme.headerFont};
   text-align: center;
@@ -32,7 +32,7 @@ const SideDiv = styled.nav`
   background-color: ${({ theme }) => theme.primaryDark};
   height: 100%;
   margin: auto;
-  width: 15%;
+  width: 5%;
 `
 
 export default Home

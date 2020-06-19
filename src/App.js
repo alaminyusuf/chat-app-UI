@@ -9,7 +9,7 @@ import Home from './components/pages/Home'
 import Navbar from './components/layout/Navbar'
 import Login from './components/pages/Login'
 import SignUp from './components/pages/SignUp'
-import Profile from './components/pages/Profile'
+import Profile from './components/pages/profile/Profile'
 import Settings from './components/pages/Settings'
 
 const App = () => {
