@@ -10,7 +10,7 @@ const ChatPage = () => {
         <ChatBar />
       </SideDiv>
       <Div>
-        <Textarea name="text" cols="15" rows="3"></Textarea>
+        <Textarea name="text" cols="10" rows="2"></Textarea>
         <button type="submit">Send</button>
       </Div>
     </Body>
