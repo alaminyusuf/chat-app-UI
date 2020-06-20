@@ -47,6 +47,7 @@ const Settings = () => {
 const Body = styled.div`
   height: 93.7vh;
   display: flex;
+  flex-direction: column;
 `
 const Div = styled.div`
   flex-grow: 4;
