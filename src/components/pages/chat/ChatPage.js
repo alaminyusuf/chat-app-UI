@@ -10,7 +10,8 @@ const ChatPage = () => {
         <ChatBar />
       </SideDiv>
       <Div>
-        Join Others, Stay Connected! <br /> <People style={{ fontSize: 100 }} />
+        <Textarea name="text" cols="15" rows="3"></Textarea>
+        <button type="submit">Send</button>
       </Div>
     </Body>
   )
@@ -26,6 +27,14 @@ const Div = styled.div`
   color: ${({ theme }) => theme.primaryButton};
   font-size: ${({ theme }) => theme.headerFont};
   text-align: center;
+`
+
+const Textarea = styled.textarea`
+  resize: none;
+  width: 65%;
+  &:focus {
+    outline: none;
+  }
 `
 
 const SideDiv = styled.nav`

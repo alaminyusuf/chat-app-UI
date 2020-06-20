@@ -21,8 +21,8 @@ const App = () => {
           <Navbar />
           <Route exact path="/" component={Home} />
           <div className="container">
-            <Route path="/chat" component={ChatPage} />
             <Switch>
+              <Route path="/chat" component={ChatPage} />
               <Route path="/login" component={Login} />
               <Route path="/signup" component={SignUp} />
               <Route exact path="/profile" component={Profile} />
