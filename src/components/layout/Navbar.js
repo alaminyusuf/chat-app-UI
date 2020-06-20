@@ -5,6 +5,7 @@ import styled from 'styled-components'
 const Navbar = () => {
   const location = useLocation()
   const isChatPage = location.pathname === '/chat' ? true : false
+  const isProfilePage = location.pathname === '/profile' ? true : false
   const isLogin = location.pathname === '/login' ? true : false
   const isSignUp = location.pathname === '/signup' ? true : false
   return (
@@ -12,7 +13,7 @@ const Navbar = () => {
       <Link to="/">
         <H1>Chat Hub</H1>
       </Link>
-      {isChatPage ? null : (
+      {(isChatPage) || (isProfilePage )? null : (
         <Ul>
           {isLogin ? null : (
             <Link to="/login">
