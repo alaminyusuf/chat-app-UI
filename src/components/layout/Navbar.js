@@ -4,20 +4,24 @@ import styled from 'styled-components'
 
 const Navbar = () => {
   const location = useLocation()
-  const isHome = () => (location.pathname === '/' ? true : false)
-
+  const isLogin = location.pathname === '/login' ? true : false
+  const isSignUp = location.pathname === '/signup' ? true : false
   return (
     <Nav>
       <Link to="/">
         <H1>Chat Hub</H1>
       </Link>
       <Ul>
-        <Link to="/login">
-          <Li>Login</Li>
-        </Link>
-        <Link to="/signup">
-          <Li>Sign Up</Li>
-        </Link>
+        {isLogin ? null : (
+          <Link to="/login">
+            <Li>Login</Li>
+          </Link>
+        )}
+        {isSignUp ? null : (
+          <Link to="/signup">
+            <Li>Sign Up</Li>
+          </Link>
+        )}
       </Ul>
     </Nav>
   )

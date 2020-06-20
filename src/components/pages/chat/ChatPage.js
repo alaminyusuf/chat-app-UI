@@ -38,7 +38,7 @@ const Textarea = styled.textarea`
 `
 
 const SideDiv = styled.nav`
-  background-color: ${({ theme }) => theme.primaryDark};
+  background-color: ${({ theme }) => theme.primaryLight};
   height: 100%;
   margin: auto;
   width: 22%;

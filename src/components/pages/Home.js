@@ -10,7 +10,7 @@ const Home = () => {
         <SideBar />
       </SideDiv>
       <Div>
-        Join Others, Stay Connected! <br /> <People style={{ fontSize: 100 }} />
+        Join Others, Stay Connected! <br /> <People style={{ fontSize: 125 }} />
       </Div>
     </Body>
   )

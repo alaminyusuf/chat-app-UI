@@ -1,7 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import ProfilePic from './ProfilePic'
-import { Edit, ExitToApp, Person } from '@material-ui/icons'
+import {
+  Person,
+  Phone,
+  Face,
+  Flag,
+  SettingsApplications,
+} from '@material-ui/icons'
 
 const Profile = () => {
   return (
@@ -10,25 +17,23 @@ const Profile = () => {
         <ProfilePic />
       </Left>
       <Div>
-        <H3>
-          Edit Profile <Person fontSize="large" />
-        </H3>
         <div>
-          Name <Edit fontSize="small" />
+          Name <Person fontSize="small" />
         </div>
         <div>
-          Age <Edit fontSize="small" />
+          Age <Face fontSize="small" />
         </div>
         <div>
-          Country <Edit fontSize="small" />
+          Country <Flag fontSize="small" />
         </div>
         <div>
-          Phone <Edit fontSize="small" />
+          Phone <Phone fontSize="small" />
         </div>
-        <div>
-          Log Out <ExitToApp fontSize="small" />
-        </div>
-        <Button type="submit">Save</Button>
+        <Link to="/profile/settings">
+          <H3>
+            Go To Settings <SettingsApplications fontSize="large" />
+          </H3>
+        </Link>
       </Div>
     </Body>
   )
@@ -37,9 +42,10 @@ const Profile = () => {
 const Body = styled.div`
   height: 93.7vh;
   display: flex;
+  /* flex-direction: column; */
 `
 const Div = styled.div`
-  flex-grow: 4;
+  flex: 1;
   div {
     margin-top: 1.5rem;
     border: 1px #ccc solid;
@@ -49,8 +55,8 @@ const Div = styled.div`
   }
 `
 const Left = styled.div`
-  flex-grow: 1;
-  width: 45%;
+  flex: 1;
+  width: 30%;
 `
 
 const H3 = styled.h3`
@@ -60,21 +66,6 @@ const H3 = styled.h3`
   margin-top: 1rem;
   font-size: 25px;
   color: ${({ theme }) => theme.primaryButton};
-`
-
-const Button = styled.button`
-  width: 40%;
-  text-align: center;
-  height: 1.8rem;
-  color: ${({ theme }) => theme.primaryDark};
-  border: none;
-  background-color: ${({ theme }) => theme.primaryButton};
-  outline: none;
-  border-radius: 10px;
-  margin-top: 1rem;
-  &:hover {
-    background-color: ${({ theme }) => theme.secondaryButton};
-  }
 `
 
 export default Profile
