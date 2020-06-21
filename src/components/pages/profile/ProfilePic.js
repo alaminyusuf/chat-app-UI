@@ -11,7 +11,7 @@ const ProfilePic = () => {
 }
 
 const H1 = styled.h1`
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
 `
 

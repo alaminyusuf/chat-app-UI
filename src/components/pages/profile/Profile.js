@@ -42,7 +42,9 @@ const Profile = () => {
 const Body = styled.div`
   height: 93.7vh;
   display: flex;
-  /* flex-direction: column; */
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+  }
 `
 const Div = styled.div`
   flex: 1;
@@ -52,6 +54,9 @@ const Div = styled.div`
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      margin-top: 0.5rem;
+    }
   }
 `
 const Left = styled.div`
