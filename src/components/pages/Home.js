@@ -33,6 +33,9 @@ const SideDiv = styled.nav`
   height: 100%;
   margin: auto;
   width: 5%;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 12%;
+  }
 `
 
 export default Home

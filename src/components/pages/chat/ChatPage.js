@@ -10,6 +10,7 @@ const ChatPage = () => {
         <ChatBar />
       </SideDiv>
       <Div>
+        <h3 style={{ textAlign: 'center' }}>Username</h3>
         <div>
           <Textarea name="text" cols="10" rows="2"></Textarea>
           <Button type="submit">
@@ -50,6 +51,9 @@ const Textarea = styled.textarea`
   &:focus {
     border: 2px solid ${({ theme }) => theme.primaryButton};
     outline: #00ffff;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 55%;
   }
 `
 
