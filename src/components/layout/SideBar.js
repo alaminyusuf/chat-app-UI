@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import { Settings, Chat, ExitToApp, Person } from '@material-ui/icons'
 
 const SideBar = () => {
+  const location = useLocation()
+  const isChatPage = location.pathname === '/chat' ? true : false
   return (
     <Div>
       <Link to="/profile">
@@ -11,11 +13,13 @@ const SideBar = () => {
           <Person />
         </div>
       </Link>
-      <Link to="/chat">
-        <div>
-          <Chat />
-        </div>
-      </Link>
+      {isChatPage ? null : (
+        <Link to="/chat">
+          <div>
+            <Chat />
+          </div>
+        </Link>
+      )}
       <Link to="/profile/settings">
         <div>
           <Settings />

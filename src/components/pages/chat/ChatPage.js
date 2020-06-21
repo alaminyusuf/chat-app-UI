@@ -58,10 +58,15 @@ const Textarea = styled.textarea`
 `
 
 const SideDiv = styled.nav`
-  background-color: ${({ theme }) => theme.primaryLight};
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   margin: auto;
-  width: 22%;
+  width: 30%;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 12%;
+  }
 `
 
 const Button = styled.button`
