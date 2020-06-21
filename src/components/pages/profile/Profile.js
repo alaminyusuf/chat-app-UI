@@ -48,18 +48,25 @@ const Body = styled.div`
 `
 const Div = styled.div`
   flex: 1;
+  height: 50%;
   div {
     margin-top: 1.5rem;
     border: 1px #ccc solid;
     padding: 5px;
     display: flex;
     justify-content: space-between;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex: 0;
+  }
 `
 const Left = styled.div`
   flex: 1;
   width: 30%;
+  height: 15rem;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    height: 15%;
+    flex: 0;
+    /* height: 5%; */
     width: 0%;
   }
 `
