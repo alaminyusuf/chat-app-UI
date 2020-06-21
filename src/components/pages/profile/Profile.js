@@ -54,14 +54,14 @@ const Div = styled.div`
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-      margin-top: 0.5rem;
-    }
-  }
 `
 const Left = styled.div`
   flex: 1;
   width: 30%;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    height: 15%;
+    width: 0%;
+  }
 `
 
 const H3 = styled.h3`
