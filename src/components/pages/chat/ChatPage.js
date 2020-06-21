@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import { People, Send } from '@material-ui/icons/'
-import ChatBar from './ChatBar'
+import ChatBar from './SidePane'
+import SideNav from './SideNav'
 
 const ChatPage = () => {
   return (
     <Body>
       <SideDiv>
+        <SideNav />
         <ChatBar />
       </SideDiv>
       <Div>

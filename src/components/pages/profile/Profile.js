@@ -51,7 +51,8 @@ const Div = styled.div`
   height: 50%;
   div {
     margin-top: 1.5rem;
-    border: 1px #ccc solid;
+    border-bottom: 1.5px #ccc solid;
+    border-left: 1.5px #ccc solid;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -66,7 +67,6 @@ const Left = styled.div`
   height: 15rem;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex: 0;
-    /* height: 5%; */
     width: 0%;
   }
 `

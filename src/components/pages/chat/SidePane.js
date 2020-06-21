@@ -5,9 +5,6 @@ import SideBar from '@layout/SideBar'
 const ChatBar = () => {
   return (
     <Body>
-      <SideDiv>
-        <SideBar />
-      </SideDiv>
       <div>
         <div>Chat Bar</div>
         <div>Chat Bar</div>

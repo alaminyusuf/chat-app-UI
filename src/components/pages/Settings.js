@@ -51,7 +51,7 @@ const Div = styled.div`
   flex-grow: 4;
   div {
     margin-top: 1.5rem;
-    border: 1px #ccc solid;
+    border-bottom: 2px #ccc solid;
     padding: 5px;
     display: flex;
     justify-content: space-between;
