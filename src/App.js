@@ -4,13 +4,13 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from './style/Global'
 import { theme } from './style/theme'
 
-import ChatPage from './components/pages/chat/ChatPage'
-import Home from './components/pages/Home'
-import Navbar from './components/layout/Navbar'
-import Login from './components/pages/Login'
-import SignUp from './components/pages/SignUp'
-import Profile from './components/pages/profile/Profile'
-import Settings from './components/pages/Settings'
+import ChatPage from '@chat/ChatPage'
+import Home from '@pages/Home'
+import Navbar from '@layout/Navbar'
+import Login from '@pages/Login'
+import SignUp from '@pages/SignUp'
+import Profile from '@profile/Profile'
+import Settings from '@pages/Settings'
 
 const App = () => {
   return (

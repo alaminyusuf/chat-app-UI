@@ -4,5 +4,18 @@
     "development": {
       "presets": [["@babel/preset-react", { "development": true }]]
     }
-  }
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@layout": "./src/components/layout",
+          "@chat": "./src/components/pages/chat",
+          "@profile": "./src/components/pages/profile",
+          "@pages": "./src/components/pages"
+        }
+      }
+    ]
+  ]
 }
