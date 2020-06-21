@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { Person } from '@material-ui/icons'
 
 const Login = () => {
   return (
@@ -9,9 +10,9 @@ const Login = () => {
         <H1>Login</H1>
         <Form>
           <Label>Email </Label>
-          <Input placeholder="Enter Name..." />
-          <Label>Password </Label>
           <Input placeholder="Enter Email..." />
+          <Label>Password </Label>
+          <Input placeholder="Enter Password..." />
           <LoginButton>Login</LoginButton>
         </Form>
         <Link to="/signup">
@@ -24,7 +25,7 @@ const Login = () => {
 
 const H1 = styled.h1`
   font-size: ${({ theme }) => theme.headerFont};
-  font-weight: 500;
+  font-weight: 400;
   margin-left: 5rem;
   padding-top: 0.5rem;
   text-align: center;
@@ -33,10 +34,10 @@ const H1 = styled.h1`
 
 const Model = styled.div`
   margin: auto;
-  width: 65%;
+  width: 50%;
   -webkit-box-shadow: ${({ theme }) => theme.shadow};
   box-shadow: ${({ theme }) => theme.shadow};
-  height: 65vh;
+  height: 45vh;
   background-color: #fff;
   margin-top: 5%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -54,11 +55,11 @@ const Form = styled.form`
 
 const Label = styled.label`
   padding: 2%;
-  font-size: 20px;
-  padding-top: 8%;
+  font-size: 15px;
+  padding-top: 3%;
   font-weight: 300;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 15px;
+    font-size: 12px;
   }
 `
 
@@ -75,7 +76,7 @@ const Input = styled.input`
     background-color: #fff;
     border-bottom-color: ${({ theme }) => theme.primaryButton};
     outline: none;
-    width: 65%;
+    width: 71%;
   }
 `
 
