@@ -8,12 +8,14 @@ const Navbar = () => {
   const isProfilePage = location.pathname === '/profile' ? true : false
   const isLogin = location.pathname === '/login' ? true : false
   const isSignUp = location.pathname === '/signup' ? true : false
+  const isSettingsPage =
+    location.pathname === '/profile/settings' ? true : false
   return (
     <Nav>
       <Link to="/">
         <H1>Chat Hub</H1>
       </Link>
-      {(isChatPage) || (isProfilePage )? null : (
+      {isChatPage || isProfilePage || isSettingsPage ? null : (
         <Ul>
           {isLogin ? null : (
             <Link to="/login">

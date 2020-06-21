@@ -25,18 +25,16 @@ const Settings = () => {
           Phone <Edit fontSize="small" />
         </div>
         <div>
-          Log Out <ExitToApp fontSize="small" />
-        </div>
-        <div>
           <form onSubmit={handleSubmit}>
             <label>
               Upload file:
               <Input type="file" />
             </label>
-            <br />
-            <button type="submit">Submit</button>
           </form>
           <Edit fontSize="small" />
+        </div>
+        <div>
+          Log Out <ExitToApp fontSize="small" />
         </div>
         <Button type="submit">Save</Button>
       </Div>

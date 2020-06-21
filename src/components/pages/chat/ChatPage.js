@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import People from '@material-ui/icons/People'
+import { People, Send } from '@material-ui/icons/'
 import ChatBar from './ChatBar'
 
 const ChatPage = () => {
@@ -10,8 +10,13 @@ const ChatPage = () => {
         <ChatBar />
       </SideDiv>
       <Div>
-        <Textarea name="text" cols="10" rows="2"></Textarea>
-        <button type="submit">Send</button>
+        <div>
+          <Textarea name="text" cols="10" rows="2"></Textarea>
+          <Button type="submit">
+            {' '}
+            <Send fontSize="small" />
+          </Button>
+        </div>
       </Div>
     </Body>
   )
@@ -27,13 +32,24 @@ const Div = styled.div`
   color: ${({ theme }) => theme.primaryButton};
   font-size: ${({ theme }) => theme.headerFont};
   text-align: center;
+  div {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
 `
 
 const Textarea = styled.textarea`
+  border-radius: 2px;
   resize: none;
-  width: 65%;
+  width: 70%;
+  border: 1px solid #ccc;
+  outline: none;
+  height: 2rem;
   &:focus {
-    outline: none;
+    border: 2px solid ${({ theme }) => theme.primaryButton};
+    outline: #00ffff;
   }
 `
 
@@ -42,6 +58,21 @@ const SideDiv = styled.nav`
   height: 100%;
   margin: auto;
   width: 22%;
+`
+
+const Button = styled.button`
+  width: 5rem;
+  text-align: center;
+  height: 1.8rem;
+  color: #fff;
+  border: none;
+  background-color: ${({ theme }) => theme.primaryButton};
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  &:hover {
+    background-color: ${({ theme }) => theme.secondaryButton};
+  }
 `
 
 export default ChatPage
