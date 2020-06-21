@@ -9,7 +9,7 @@ const Settings = () => {
   return (
     <Body>
       <H3>
-        Edit Profile <Person fontSize="large" />
+        Edit Profile <Person fontSize="large" style={{ padding: '8px' }} />
       </H3>
       <Div>
         <div>
@@ -57,12 +57,14 @@ const Div = styled.div`
     justify-content: space-between;
   }
 `
-const Left = styled.div`
-  flex-grow: 1;
-  width: 45%;
-`
+// const Left = styled.div`
+//   flex-grow: 1;
+//   width: 45%;
+// `
 
 const H3 = styled.h3`
+  display: flex;
+  justify-content: space-around;
   text-align: center;
   justify-content: center;
   align-items: center;

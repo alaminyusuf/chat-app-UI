@@ -8,9 +8,9 @@ const Login = () => {
       <Model>
         <H1>Login</H1>
         <Form>
-          <Label>Name </Label>
-          <Input placeholder="Enter Name..." />
           <Label>Email </Label>
+          <Input placeholder="Enter Name..." />
+          <Label>Password </Label>
           <Input placeholder="Enter Email..." />
           <LoginButton>Login</LoginButton>
         </Form>
