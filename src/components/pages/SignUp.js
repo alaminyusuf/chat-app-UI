@@ -16,6 +16,8 @@ const Login = () => {
           <Input placeholder="Enter Phone..." />
           <Label>Age </Label>
           <Input placeholder="Enter Age..." />
+          <Label>Password </Label>
+          <Input placeholder="At least 8 characters!" />
           <SignUpButton>Sign Up</SignUpButton>
         </Form>
         <Link to="/login">
@@ -40,12 +42,12 @@ const Model = styled.div`
   width: 65%;
   -webkit-box-shadow: ${({ theme }) => theme.shadow};
   box-shadow: ${({ theme }) => theme.shadow};
-  height: 57vh;
+  height: 65vh;
   background-color: #fff;
   margin-top: 5%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-top: 35%;
-    height: 40vh;
+    height: 45vh;
     width: 80%;
   }
 `

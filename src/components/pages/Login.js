@@ -41,7 +41,7 @@ const Model = styled.div`
   margin-top: 5%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-top: 35%;
-    height: 40vh;
+    height: 35vh;
     width: 80%;
   }
 `
