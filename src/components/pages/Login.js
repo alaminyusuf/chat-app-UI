@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { Person } from '@material-ui/icons'
 
 const Login = () => {
   return (
@@ -66,8 +65,8 @@ const Label = styled.label`
 const Input = styled.input`
   margin: auto;
   width: 70%;
-  height: 25px;
-  border-radius: 5px;
+  height: 20px;
+  border-radius: 3px;
   border-bottom-color: 0.5rem #ccc;
   border-top: none;
   border-left: none;

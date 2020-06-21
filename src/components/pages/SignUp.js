@@ -12,6 +12,10 @@ const Login = () => {
           <Input placeholder="Enter Name..." />
           <Label>Email </Label>
           <Input placeholder="Enter Email..." />
+          <Label>Phone </Label>
+          <Input placeholder="Enter Phone..." />
+          <Label>Age </Label>
+          <Input placeholder="Enter Age..." />
           <SignUpButton>Sign Up</SignUpButton>
         </Form>
         <Link to="/login">
@@ -36,7 +40,7 @@ const Model = styled.div`
   width: 65%;
   -webkit-box-shadow: ${({ theme }) => theme.shadow};
   box-shadow: ${({ theme }) => theme.shadow};
-  height: 65vh;
+  height: 57vh;
   background-color: #fff;
   margin-top: 5%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -54,19 +58,19 @@ const Form = styled.form`
 
 const Label = styled.label`
   padding: 2%;
-  font-size: 20px;
-  padding-top: 8%;
+  font-size: 12px;
+  padding-top: 2%;
   font-weight: 300;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 15px;
+    font-size: 10px;
   }
 `
 
 const Input = styled.input`
   margin: auto;
   width: 70%;
-  height: 25px;
-  border-radius: 5px;
+  height: 16px;
+  border-radius: 3px;
   border-bottom-color: 0.5rem #ccc;
   border-top: none;
   border-left: none;
@@ -75,7 +79,7 @@ const Input = styled.input`
     background-color: #fff;
     border-bottom-color: ${({ theme }) => theme.primaryButton};
     outline: none;
-    width: 65%;
+    width: 72%;
   }
 `
 
