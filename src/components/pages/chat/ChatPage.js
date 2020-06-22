@@ -31,7 +31,7 @@ const Body = styled.div`
 `
 
 const Div = styled.div`
-  flex-grow: 5;
+  flex-grow: 3;
   color: ${({ theme }) => theme.primaryButton};
   font-size: ${({ theme }) => theme.headerFont};
   text-align: center;
@@ -46,7 +46,7 @@ const Div = styled.div`
 const Textarea = styled.textarea`
   border-radius: 2px;
   resize: none;
-  width: 70%;
+  width: 60%;
   border: 1px solid #ccc;
   outline: none;
   height: 2rem;
@@ -55,19 +55,21 @@ const Textarea = styled.textarea`
     outline: #00ffff;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 55%;
+    width: 45%;
   }
 `
 
 const SideDiv = styled.nav`
+  display: flex;
   text-align: center;
-  justify-content: center;
+  /* flex: 1; */
+  /* justify-content: space-around; */
   align-items: center;
   height: 100%;
   margin: auto;
-  width: 30%;
+  width: 40%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 12%;
+    width: 20%;
   }
 `
 

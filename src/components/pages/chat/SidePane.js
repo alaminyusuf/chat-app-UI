@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import SideBar from '@layout/SideBar'
 
 const ChatBar = () => {
   return (
@@ -23,30 +22,18 @@ const Body = styled.div`
   text-align: center;
   background-color: ${({ theme }) => theme.primaryLight};
   align-items: center;
+  width: 100%;
   div {
     text-align: center;
     justify-content: center;
     align-items: center;
     margin: auto;
     border-radius: 50%;
-    width: 50%;
+    width: 100%;
     color: #f4f4f4;
     margin-top: 3rem;
     &:hover {
     }
-  }
-`
-
-const SideDiv = styled.nav`
-  text-align: center !important;
-  justify-content: center !important;
-  align-items: center !important;
-  background-color: ${({ theme }) => theme.primaryDark};
-  height: 100%;
-  margin: 0;
-  width: 15%;
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 10%;
   }
 `
 

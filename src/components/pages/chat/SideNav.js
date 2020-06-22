@@ -1,30 +1,26 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { Settings, Chat, ExitToApp, Person } from '@material-ui/icons'
 
 const SideNav = () => {
-  const location = useLocation()
-  const isChatPage = location.pathname === '/chat' ? true : false
   return (
     <Div>
-      <Link to="/profile">
+      <NavLink to="/profile" activeStyle={{ color: 'purple' }}>
         <div>
           <Person />
         </div>
-      </Link>
-      {isChatPage ? null : (
-        <Link to="/chat">
-          <div>
-            <Chat />
-          </div>
-        </Link>
-      )}
-      <Link to="/profile/settings">
+      </NavLink>
+      <NavLink to="/chat" activeStyle={{ color: 'purple' }}>
+        <div>
+          <Chat />
+        </div>
+      </NavLink>
+      <NavLink to="/profile/settings" activeStyle={{ color: 'purple' }}>
         <div>
           <Settings />
         </div>
-      </Link>
+      </NavLink>
       <div>
         <ExitToApp />
       </div>
@@ -33,22 +29,20 @@ const SideNav = () => {
 }
 
 const Div = styled.div`
-  text-align: center;
+  /* text-align: center;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  width: 20%;
+  height: 100%;
+  background-color: ${({ theme }) => theme.primaryLight};
   div {
+    color: ${({ theme }) => theme.primaryButton};
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     margin: auto;
-    border-radius: 50%;
-    width: 50%;
-    /* padding: 5px; */
-    color: #f4f4f4;
+    width: 100%;
     margin-top: 3rem;
-    &:hover {
-      /* background-color: ${({ theme }) => theme.primaryButton}; */
-    }
   }
 `
 
