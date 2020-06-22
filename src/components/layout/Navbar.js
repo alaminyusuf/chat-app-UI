@@ -58,7 +58,7 @@ const Li = styled.li`
   width: 4rem;
   list-style: none;
   margin: 0 15px 0 0;
-  padding: 5px 3px 10px 5px;
+  padding: 5px 3px 5px 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.1rem 0.2rem 0.3rem;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px 1px;
   color: ${({ theme }) => theme.primaryDark};

@@ -28,10 +28,11 @@ const Body = styled.div`
     justify-content: center;
     align-items: center;
     margin: auto;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 100%;
-    color: #f4f4f4;
-    margin-top: 3rem;
+    color: #000;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     &:hover {
     }
   }

@@ -32,11 +32,13 @@ const Div = styled.div`
   /* text-align: center;
   justify-content: center;
   align-items: center; */
-  width: 20%;
+  width: 13%;
   height: 100%;
-  background-color: ${({ theme }) => theme.primaryLight};
+  background-color: ${({ theme }) => theme.primaryDark};
+  color: #fff;
   div {
-    color: ${({ theme }) => theme.primaryButton};
+    /* color */
+    z-index: 2;
     text-align: center;
     /* justify-content: center;
     align-items: center; */
