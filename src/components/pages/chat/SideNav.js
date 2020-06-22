@@ -6,17 +6,17 @@ import { Settings, Chat, ExitToApp, Person } from '@material-ui/icons'
 const SideNav = () => {
   return (
     <Div>
-      <NavLink to="/profile" activeStyle={{ color: 'purple' }}>
+      <NavLink to="/profile" activeStyle={{ color: 'red' }}>
         <div>
           <Person />
         </div>
       </NavLink>
-      <NavLink to="/chat" activeStyle={{ color: 'purple' }}>
+      <NavLink to="/chat" activeStyle={{ color: 'red' }}>
         <div>
           <Chat />
         </div>
       </NavLink>
-      <NavLink to="/profile/settings" activeStyle={{ color: 'purple' }}>
+      <NavLink to="/profile/settings" activeStyle={{ color: 'red' }}>
         <div>
           <Settings />
         </div>
