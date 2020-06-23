@@ -18,15 +18,15 @@ const Body = styled.div`
   padding: 0;
   height: 100%;
   margin: auto;
-  display: flex;
+  /* display: flex; */
   text-align: center;
   background-color: ${({ theme }) => theme.primaryLight};
   /* align-items: center; */
   width: 60%;
   div {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
     margin: auto;
     width: 100%;
     color: #000;
