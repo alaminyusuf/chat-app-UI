@@ -9,16 +9,16 @@ const SideNav = () => {
       <NavLink
         to="/profile"
         style={{ color: '#f4f4f4' }}
-        activeStyle={{ color: 'yellow' }}
+        activeStyle={{ color: 'blue' }}
       >
         <div>
           <Person />
         </div>
       </NavLink>
       <NavLink
-        to="/chat"
+        to="/chatpage"
         style={{ color: '#f4f4f4' }}
-        activeStyle={{ color: 'yellow' }}
+        activeStyle={{ color: 'blue' }}
       >
         <div>
           <Chat />
@@ -27,7 +27,7 @@ const SideNav = () => {
       <NavLink
         to="/profile/settings"
         style={{ color: '#f4f4f4' }}
-        activeStyle={{ color: 'yellow' }}
+        activeStyle={{ color: 'blue' }}
       ></NavLink>
       <div>
         <Settings />

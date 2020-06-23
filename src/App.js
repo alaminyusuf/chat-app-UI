@@ -20,7 +20,7 @@ const App = () => {
           <GlobalStyle />
           <Navbar />
           <Route exact path="/" component={Home} />
-          <Route path="/chat" component={ChatPage} />
+          <Route path="/chatpage" component={ChatPage} />
           <div className="container">
             <Switch>
               <Route path="/login" component={Login} />

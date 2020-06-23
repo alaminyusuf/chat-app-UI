@@ -47,14 +47,6 @@ const Div = styled.div`
   flex-grow: 4;
   color: ${({ theme }) => theme.primaryButton};
   font-size: ${({ theme }) => theme.headerFont};
-  /* text-align: center; */
-  div {
-    /* height: 100%; */
-    /* text-align: center; */
-    /* justify-content: center;
-    align-items: center; */
-    /* padding: 5px; */
-  }
 `
 
 const SideDiv = styled.nav`
@@ -65,7 +57,7 @@ const SideDiv = styled.nav`
   background-color: ${({ theme }) => theme.primaryDark};
   color: #f4f4f4;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 20%;
+    width: 15%;
   }
 `
 
