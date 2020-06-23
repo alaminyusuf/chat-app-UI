@@ -15,6 +15,7 @@ const ChatBar = () => {
 }
 
 const Body = styled.div`
+  padding: 0;
   height: 100%;
   margin: 0;
   display: flex;

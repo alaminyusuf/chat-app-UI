@@ -6,21 +6,32 @@ import { Settings, Chat, ExitToApp, Person } from '@material-ui/icons'
 const SideNav = () => {
   return (
     <Div>
-      <NavLink to="/profile" activeStyle={{ color: 'red' }}>
+      <NavLink
+        to="/profile"
+        style={{ color: '#f4f4f4' }}
+        activeStyle={{ color: 'yellow' }}
+      >
         <div>
           <Person />
         </div>
       </NavLink>
-      <NavLink to="/chat" activeStyle={{ color: 'red' }}>
+      <NavLink
+        to="/chat"
+        style={{ color: '#f4f4f4' }}
+        activeStyle={{ color: 'yellow' }}
+      >
         <div>
           <Chat />
         </div>
       </NavLink>
-      <NavLink to="/profile/settings" activeStyle={{ color: 'red' }}>
-        <div>
-          <Settings />
-        </div>
-      </NavLink>
+      <NavLink
+        to="/profile/settings"
+        style={{ color: '#f4f4f4' }}
+        activeStyle={{ color: 'yellow' }}
+      ></NavLink>
+      <div>
+        <Settings />
+      </div>
       <div>
         <ExitToApp />
       </div>
@@ -29,19 +40,13 @@ const SideNav = () => {
 }
 
 const Div = styled.div`
-  /* text-align: center;
-  justify-content: center;
-  align-items: center; */
-  width: 13%;
-  height: 100%;
   background-color: ${({ theme }) => theme.primaryDark};
   div {
-  color: #fff;
-    /* color */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     z-index: 2;
     text-align: center;
-    /* justify-content: center;
-    align-items: center; */
     margin: auto;
     width: 100%;
     margin-top: 3rem;
