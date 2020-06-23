@@ -17,25 +17,25 @@ const ChatBar = () => {
 const Body = styled.div`
   padding: 0;
   height: 100%;
-  margin: 0;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
   text-align: center;
   background-color: ${({ theme }) => theme.primaryLight};
-  align-items: center;
-  width: 50%;
+  /* align-items: center; */
+  width: 60%;
   div {
     text-align: center;
     justify-content: center;
     align-items: center;
     margin: auto;
-    /* border-radius: 50%; */
     width: 100%;
     color: #000;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    &:hover {
-    }
+    height: 3rem;
+    /* margin-top: 1.5rem;
+    margin-bottom: 1.5rem; */
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 100%;
   }
 `
 

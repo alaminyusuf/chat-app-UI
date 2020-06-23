@@ -11,9 +11,7 @@ const ChatPage = () => {
         <SideNav />
       </SideDiv>
       <Div>
-        <div className="container">
-          <ChatBar />
-        </div>
+        <ChatBar />
       </Div>
     </Body>
   )
@@ -41,17 +39,20 @@ const Body = styled.div`
   display: flex;
 `
 const Div = styled.div`
+  /* align-items: center; */
+  text-align: center;
   margin: auto;
   height: 100%;
   padding: 0;
   flex-grow: 4;
   color: ${({ theme }) => theme.primaryButton};
   font-size: ${({ theme }) => theme.headerFont};
-  text-align: center;
+  /* text-align: center; */
   div {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* height: 100%; */
+    /* text-align: center; */
+    /* justify-content: center;
+    align-items: center; */
     /* padding: 5px; */
   }
 `
