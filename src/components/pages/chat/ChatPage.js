@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { People, Send } from '@material-ui/icons/'
+import { Send } from '@material-ui/icons/'
 import ChatBar from './SidePane'
 import SideNav from './SideNav'
 

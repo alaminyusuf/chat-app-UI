@@ -57,10 +57,6 @@ const Div = styled.div`
     justify-content: space-between;
   }
 `
-// const Left = styled.div`
-//   flex-grow: 1;
-//   width: 45%;
-// `
 
 const H3 = styled.h3`
   display: flex;
@@ -76,7 +72,7 @@ const H3 = styled.h3`
 const Button = styled.button`
   width: 40%;
   text-align: center;
-  height: 1.8rem;
+  height: 2rem;
   color: ${({ theme }) => theme.primaryDark};
   border: none;
   background-color: ${({ theme }) => theme.primaryButton};
