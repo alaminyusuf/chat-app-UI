@@ -35,8 +35,8 @@ const Div = styled.div`
   width: 13%;
   height: 100%;
   background-color: ${({ theme }) => theme.primaryDark};
-  color: #fff;
   div {
+  color: #fff;
     /* color */
     z-index: 2;
     text-align: center;

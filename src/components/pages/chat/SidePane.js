@@ -22,7 +22,7 @@ const Body = styled.div`
   text-align: center;
   background-color: ${({ theme }) => theme.primaryLight};
   align-items: center;
-  width: 100%;
+  width: 50%;
   div {
     text-align: center;
     justify-content: center;
