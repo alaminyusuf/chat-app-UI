@@ -5,6 +5,7 @@ import { GlobalStyle } from './style/Global'
 import { theme } from './style/theme'
 
 import ChatPage from '@chat/ChatPage'
+import Chat from '@chat/Chat'
 import Home from '@pages/Home'
 import Navbar from '@layout/Navbar'
 import Login from '@pages/Login'
@@ -20,7 +21,10 @@ const App = () => {
           <GlobalStyle />
           <Navbar />
           <Route exact path="/" component={Home} />
-          <Route path="/chatpage" component={ChatPage} />
+          <Switch>
+            <Route exact path="/chatpage" component={ChatPage} />
+            <Route path="/chatpage/chat/:id" component={Chat} />
+          </Switch>
           <div className="container">
             <Switch>
               <Route path="/login" component={Login} />
