@@ -4,7 +4,8 @@ import styled from 'styled-components'
 
 const Navbar = () => {
   const location = useLocation()
-  const isChatPage = location.pathname === '/chatpage' ? true : false
+  const isChatPage =
+    location.pathname === '/chatpage' || '/chatpage/chat/:id' ? true : false
   const isProfilePage = location.pathname === '/profile' ? true : false
   const isLogin = location.pathname === '/login' ? true : false
   const isSignUp = location.pathname === '/signup' ? true : false

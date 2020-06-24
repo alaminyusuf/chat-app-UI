@@ -68,7 +68,9 @@ const Textarea = styled.textarea`
   width: 45rem;
   height: 60%;
   resize: none;
+  /* border: 0.1rem ${({ theme }) => theme.primaryButton}; */
   outline: none;
+  /* line-height: 1.2; */
   &:focus {
     padding: 0.2rem;
     width: 43rem;
