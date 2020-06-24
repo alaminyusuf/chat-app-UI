@@ -1,13 +1,15 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import styled from 'styled-components'
-import { Send } from '@material-ui/icons/'
+import { Send, ArrowLeftOutlined } from '@material-ui/icons/'
 
-const Chat = () => {
+const Chat = (useParams) => {
   console.log(useParams)
   return (
     <div>
-      <Link to="/chatpage">Back To Chatpage</Link>
+      <Link to="/chatpage">
+        <ArrowLeftOutlined style={{ fontSize: '60', color: '#5f9ea0' }} />
+      </Link>
       <Div>
         <h3 style={{ textAlign: 'center' }}>Username</h3>
         <Msg className="container">
@@ -75,7 +77,7 @@ const Textarea = styled.textarea`
     border: ${({ theme }) => theme.primaryButton} solid 1.5px;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 15rem;
+    width: 13rem;
     &:focus {
       height: 55;
       width: 13rem;
