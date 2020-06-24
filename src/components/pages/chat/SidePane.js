@@ -23,7 +23,7 @@ const ChatBar = () => {
             to={`/chatpage/chat/${user.id}`}
             activeStyle={{ color: 'blue' }}
           >
-            {user.name}
+            <Div>{user.name}</Div>
           </NavLink>
         </div>
       ))}
@@ -57,6 +57,10 @@ const Body = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%;
   }
+`
+
+const Div = styled.div`
+  border-bottom: #ccc solid;
 `
 
 export default ChatBar
