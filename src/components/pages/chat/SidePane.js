@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+
 // import context
 import Context from '@state/appContext'
 
@@ -40,8 +41,8 @@ const Body = styled.div`
   /* align-items: center; */
   width: 60%;
   div {
-  a {color: #000;
-  }
+    a {color: #000;
+    }
     /* text-align: center; */
     /* justify-content: center; */
     /* align-items: center; */
