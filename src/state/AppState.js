@@ -1,45 +1,41 @@
-import React, { useReducer } from 'react'
-import Context from './Context'
-import ContextReducer from './ContextReducer'
+import React from 'react'
+import Context from './appContext'
+import AppReducer from './AppReducer'
 
 // import types
-import { SET_LOADING } from './TYPES'
+import { SET_LOADING, USERS } from './TYPES'
 
 const AppState = (props) => {
+  const { children } = props
+
   const initialState = {
     users: [
-      {
-        id: 1,
-        name: John,
-      },
-      {
-        id: 2,
-        name: Kevin,
-      },
-      {
-        id: 3,
-        name: Carly,
-      },
+      { name: 'John', id: 11 },
+      { name: 'Sam', id: 342 },
+      { name: ' Carly', id: 32 },
     ],
     loading: false,
   }
 
-  const [state, dispatch] = useReducer(ContextReducer, initialState)
+  const [state, dispatch] = React.useReducer(AppReducer, initialState)
+
+  const getUsers = () => {
+    dispatch({
+      type: USERS,
+    })
+  }
 
   const setLoading = () => {
     dispatch({ type: SET_LOADING })
   }
 
-  return (
-    <Context.Provider>
-      value=
-      {{
-        users: state.users,
-        setLoading,
-      }}
-      {props.children}
-    </Context.Provider>
-  )
+  const value = {
+    users: state.users,
+    getUsers,
+    setLoading,
+  }
+
+  return <Context.Provider value={value}>{children}</Context.Provider>
 }
 
 export default AppState

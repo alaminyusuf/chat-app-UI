@@ -2,46 +2,30 @@ import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 // import context
-import Context from '@state/Context'
+import Context from '@state/appContext'
 
 const ChatBar = () => {
   const state = useContext(Context)
   const { users } = state
   console.log(users)
+  // const users = [
+  //   { name: John, id: 11 },
+  //   { name: Sam, id: 32 },
+  //   { name: Carly, id: 32 },
+  // ]
+
   return (
     <Body>
-      {/* {users.map((user) => (
-        <div>
+      {users.map((user) => (
+        <div key={Math.floor(Math.random() * 1000000)}>
           <NavLink
             to={`/chatpage/chat/${user.id}`}
             activeStyle={{ color: 'blue' }}
           >
-            User
+            {user.name}
           </NavLink>
         </div>
-      ))} */}
-      {/* <div> */}
-      {/* <div>
-        <NavLink to="/chatpage/chat/:id" activeStyle={{ color: 'blue' }}>
-          Chat Bar
-        </NavLink>
-      </div>
-      <div>
-        <NavLink to="/chatpage/chat/:id" activeStyle={{ color: 'blue' }}>
-          Chat Bar
-        </NavLink>
-      </div>
-      <div>
-        <NavLink to="/chatpage/chat/:id" activeStyle={{ color: 'blue' }}>
-          Chat Bar
-        </NavLink>
-      </div>
-      <div>
-        <NavLink to="/chatpage/chat/:id" activeStyle={{ color: 'blue' }}>
-          Chat Bar
-        </NavLink>
-      </div> */}
-      {/* </div> */}
+      ))}
     </Body>
   )
 }
@@ -52,10 +36,12 @@ const Body = styled.div`
   margin: auto;
   /* display: flex; */
   text-align: center;
-  background-color: ${({ theme }) => theme.primary};
+  /* background-color: ${({ theme }) => theme.primary}; */
   /* align-items: center; */
   width: 60%;
   div {
+  a {color: #000;
+  }
     /* text-align: center; */
     /* justify-content: center; */
     /* align-items: center; */

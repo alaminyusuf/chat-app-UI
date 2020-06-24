@@ -1,7 +1,11 @@
-import { SET_LOADING } from './TYPES'
+import { SET_LOADING, USERS } from './TYPES'
 
 export default (state, action) => {
-  switch (action) {
+  switch (action.type) {
+    case USERS:
+      return {
+        ...state,
+      }
     case SET_LOADING:
       return {
         setLoading: true,
