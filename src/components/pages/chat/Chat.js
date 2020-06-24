@@ -10,15 +10,17 @@ const Chat = () => {
       <Link to="/chatpage">Back To Chatpage</Link>
       <Div>
         <h3 style={{ textAlign: 'center' }}>Username</h3>
-        <div>
-          <div className="container">
+        <Msg className="container">
+          <div>
             <Textarea name="text" cols="10" rows="2"></Textarea>
+          </div>
+          <div>
             <Button type="submit">
               {' '}
               <Send fontSize="small" />
             </Button>
           </div>
-        </div>
+        </Msg>
       </Div>
     </div>
   )
@@ -33,17 +35,27 @@ const Div = styled.div`
   flex-grow: 4;
   color: ${({ theme }) => theme.primaryButton};
   font-size: ${({ theme }) => theme.headerFont};
+  div {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+`
+
+const Msg = styled.div`
+  /* text-align: center; */
+  justify-content: center;
 `
 
 const Button = styled.button`
   width: 5rem;
   text-align: center;
-  height: 1.8rem;
+  height: 70%;
   color: #fff;
   border: none;
   background-color: ${({ theme }) => theme.primaryButton};
   outline: none;
-  border-radius: 5px;
+  border-radius: 1px;
   margin-bottom: 1rem;
   &:hover {
     background-color: ${({ theme }) => theme.secondaryButton};
@@ -51,12 +63,23 @@ const Button = styled.button`
 `
 
 const Textarea = styled.textarea`
-  width: 60%;
+  width: 45rem;
+  height: 60%;
   resize: none;
   outline: none;
   &:focus {
+    padding: 0.2rem;
+    width: 43rem;
+    height: 55%;
     /* outline-color: ; */
     border: ${({ theme }) => theme.primaryButton} solid 1.5px;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 15rem;
+    &:focus {
+      height: 55;
+      width: 13rem;
+    }
   }
 `
 
