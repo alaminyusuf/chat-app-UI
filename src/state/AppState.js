@@ -1,9 +1,11 @@
-import { useReducer, Children } from 'react'
-import CreateContext from './CreatContext'
+import React, { useReducer } from 'react'
+import Context from './Context'
 import ContextReducer from './ContextReducer'
 
-const State = (props) => {
-  const { children } = this.props
+// import types
+import { SET_LOADING } from './TYPES'
+
+const AppState = (props) => {
   const initialState = {
     users: [
       {
@@ -19,17 +21,25 @@ const State = (props) => {
         name: Carly,
       },
     ],
+    loading: false,
   }
 
   const [state, dispatch] = useReducer(ContextReducer, initialState)
 
+  const setLoading = () => {
+    dispatch({ type: SET_LOADING })
+  }
+
   return (
-    <CreateContext.Provider>
+    <Context.Provider>
       value=
       {{
         users: state.users,
+        setLoading,
       }}
-      {children}
-    </CreateContext.Provider>
+      {props.children}
+    </Context.Provider>
   )
 }
+
+export default AppState

@@ -1,25 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+// import context
+import Context from '@state/Context'
 
 const ChatBar = () => {
-  // const [users, setusers] = React.useState([
-  //   {
-  //     id: 1,
-  //     name: John,
-  //   },
-  //   {
-  //     id: 2,
-  //     name: Kevin,
-  //   },
-  //   {
-  //     id: 3,
-  //     name: Carly,
-  //   },
-  // ])
+  const state = useContext(Context)
+  const { users } = state
+  console.log(users)
   return (
     <Body>
-      {users.map((user) => (
+      {/* {users.map((user) => (
         <div>
           <NavLink
             to={`/chatpage/chat/${user.id}`}
@@ -28,7 +19,7 @@ const ChatBar = () => {
             User
           </NavLink>
         </div>
-      ))}
+      ))} */}
       {/* <div> */}
       {/* <div>
         <NavLink to="/chatpage/chat/:id" activeStyle={{ color: 'blue' }}>

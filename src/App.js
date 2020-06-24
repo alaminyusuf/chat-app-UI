@@ -13,29 +13,34 @@ import SignUp from '@pages/SignUp'
 import Profile from '@profile/Profile'
 import Settings from '@pages/Settings'
 
+// import context
+import State from './state/AppState'
+
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <Router>
-        <div>
-          <GlobalStyle />
-          <Navbar />
-          <Route exact path="/" component={Home} />
-          <Switch>
-            <Route exact path="/chatpage" component={ChatPage} />
-            <Route path="/chatpage/chat/:id" component={Chat} />
-          </Switch>
-          <div className="container">
+    <State>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <div>
+            <GlobalStyle />
+            <Navbar />
+            <Route exact path="/" component={Home} />
             <Switch>
-              <Route path="/login" component={Login} />
-              <Route path="/signup" component={SignUp} />
-              <Route exact path="/profile" component={Profile} />
-              <Route path="/profile/settings" component={Settings} />
+              <Route exact path="/chatpage" component={ChatPage} />
+              <Route path="/chatpage/chat/:id" component={Chat} />
             </Switch>
+            <div className="container">
+              <Switch>
+                <Route path="/login" component={Login} />
+                <Route path="/signup" component={SignUp} />
+                <Route exact path="/profile" component={Profile} />
+                <Route path="/profile/settings" component={Settings} />
+              </Switch>
+            </div>
           </div>
-        </div>
-      </Router>
-    </ThemeProvider>
+        </Router>
+      </ThemeProvider>
+    </State>
   )
 }
 
