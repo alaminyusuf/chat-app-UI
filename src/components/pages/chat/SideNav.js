@@ -28,10 +28,11 @@ const SideNav = () => {
         to="/profile/settings"
         style={{ color: '#f4f4f4' }}
         activeStyle={{ color: 'blue' }}
-      ></NavLink>
-      <div>
-        <Settings />
-      </div>
+      >
+        <div>
+          <Settings />
+        </div>
+      </NavLink>
       <div>
         <ExitToApp />
       </div>

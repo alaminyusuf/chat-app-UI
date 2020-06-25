@@ -26,8 +26,8 @@ const App = () => {
             <Navbar />
             <Route exact path="/" component={Home} />
             <Switch>
-              <Route exact path="/chatpage" component={ChatPage} />
-              <Route path="/chatpage/chat/:id" component={Chat} />
+              <Route exact path="/chat" component={ChatPage} />
+              <Route path="/chat/:id" component={Chat} />
             </Switch>
             <div className="container">
               <Switch>

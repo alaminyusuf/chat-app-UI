@@ -19,7 +19,7 @@ const ChatBar = () => {
     <Body>
       {users.map(({ id, name }) => (
         <div key={Math.floor(Math.random() * 1000000)}>
-          <NavLink to={`/chatpage/chat/${id}`} activeStyle={{ color: 'blue' }}>
+          <NavLink to={`/chat/${id}`} activeStyle={{ color: 'blue' }}>
             <Div>{name}</Div>
           </NavLink>
         </div>

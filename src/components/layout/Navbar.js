@@ -1,29 +1,26 @@
 import React from 'react'
-import { Link, useLocation, useRouteMatch } from 'react-router-dom'
+import { Link, useLocation, matchPath } from 'react-router-dom'
 import styled from 'styled-components'
 
 import Context from '@state/appContext'
 
 const Navbar = () => {
-  const state = React.useContext(Context)
-
-  const { users } = state
-
+  // const state = React.useContext(Context)
+  // const { users } = state
   const location = useLocation()
-  const match = useRouteMatch('/chatpage/chat/:id')
-  const isChatPage = location.pathname === '/chatpage' ? true : false
-  const isChat = location.pathname === `${match.url}` ? true : false
+  const isChatPage = location.pathname === '/chat' ? true : false
   const isProfilePage = location.pathname === '/profile' ? true : false
   const isLogin = location.pathname === '/login' ? true : false
   const isSignUp = location.pathname === '/signup' ? true : false
   const isSettingsPage =
     location.pathname === '/profile/settings' ? true : false
+
   return (
     <Nav>
       <Link to="/">
         <H1>Chat Hub</H1>
       </Link>
-      {isChatPage || isProfilePage || isSettingsPage || isChat ? null : (
+      {isChatPage || isProfilePage || isSettingsPage ? null : (
         <Ul>
           {isLogin ? null : (
             <Link to="/login">

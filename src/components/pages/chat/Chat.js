@@ -7,7 +7,7 @@ const Chat = (useParams) => {
   console.log(useParams)
   return (
     <div>
-      <Link to="/chatpage">
+      <Link to="/chat">
         <ArrowLeftOutlined style={{ fontSize: '60', color: '#5f9ea0' }} />
       </Link>
       <Div>
